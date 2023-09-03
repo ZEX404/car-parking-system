@@ -1,6 +1,6 @@
-## Installation
+## Cloning
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use [git](https://git-scm.com/downloads) to clone the repo.
 
 ```bash
 git clone https://github.com/ZEX404/car-parking-system.git
