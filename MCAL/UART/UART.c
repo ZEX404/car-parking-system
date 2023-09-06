@@ -1,10 +1,3 @@
-/*
- * UART.c
- *
- *  Created on: Aug 30, 2023
- *      Author: Menna
- */
-
 #include"../../LIB/STD_TYPES.h"
 #include"../../LIB/BIT_MATH.h"
 #include<avr/io.h>
