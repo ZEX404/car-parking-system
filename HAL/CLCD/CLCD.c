@@ -1,7 +1,7 @@
 #define F_CPU 8000000UL
-#include "../LIB/STD_TYPES.h"
-#include "../HAL/CLCD.h"
-#include "../MCAL/DIO.h"
+#include "../../LIB/STD_TYPES.h"
+#include "CLCD.h"
+#include "../../MCAL/DIO/DIO.h"
 
 void CLCD_voidSendCommand (u8 Copy_u8Command)
 {
