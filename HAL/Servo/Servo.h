@@ -28,15 +28,13 @@
 #define PRESCALLER_MASK 0b11111000
 #define DIVIDE_BY_8     2
 
-#define OK 1
-#define NOT_OK 0
 
 // FAST PWM
-void TIMER1_voidINIT();
-void TIMER1_voidSetChannelACompareMatch(u16 Copy_u16CompareMatch); //OCR1A
-void TIMER1_voidSetTopTicks(u16 Copy_u16TopTicks); //ICR
+void TIMER1_voidCTCINIT();
+void TIMER1_voidSetChannelACompareMatch(u16 Copy_u16CompareMatch); // OCR1A
+void TIMER1_voidSetTopTicks(u16 Copy_u16TopTicks); // ICR
 
-u16 u8SetRequiredValue(u16 entered_value);
-u8 isValidAngle(const u8* str);
+void Servo_OpenGate(void);
+void Servo_CloseGate(void);
 
 #endif /* SERVO_H_ */
