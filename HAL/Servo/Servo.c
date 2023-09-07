@@ -50,7 +50,7 @@ void Servo_OpenGate(void){
 
 void Servo_CloseGate(void){
     u16 ServoLocal_u16Iterator;
-    for(ServoLocal_u16Iterator = 1000 + 90; ServoLocal_u16Iterator >= 999; ServoLocal_u16Iterator--){
+    for(ServoLocal_u16Iterator = 1090 ; ServoLocal_u16Iterator >= 999; ServoLocal_u16Iterator--){
         TIMER1_voidSetChannelACompareMatch(ServoLocal_u16Iterator);
         _delay_ms(10);
     }
