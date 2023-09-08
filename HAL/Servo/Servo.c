@@ -5,12 +5,12 @@
  *      Author: Omar
  */
 
-#include "Servo.h"
-#include "STD_TYPES.h"
-#include "BIT_MATH.h"
-#include "DIO.h"
-#include <avr/io.h>
+#include "../../LIB/STD_TYPES.h"
+#include "../../LIB/BIT_MATH.h"
+#include "../../MCAL/DIO/DIO.h"
+#include "../../HAL/Servo/Servo.h"
 #include <util/delay.h>
+#include <avr/io.h>
 
 void TIMER1_voidCTCINIT(){
 
