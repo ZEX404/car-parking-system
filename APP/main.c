@@ -11,6 +11,7 @@
 #include "../HAL/CLCD/CLCD.h"
 #include "../HAL/Keypad/Keypad.h"
 #include "../HAL/Servo/Servo.h"
+#include "../MCAL/ADC/ADC.h"
 
 
 int main(void) {
@@ -43,8 +44,37 @@ int main(void) {
 	Servo_CloseGate(); 										   // Rotate back to 0 degrees to Close Gate 
 
 */
+/*
+LDR PART:
+	CLCD_voidInit();
+	ADC_vidInit();
+	LCD_voidClear();
+	 f32 LDR;
+	while(1)
+	{
+		LCD_voidClear();
+		LDR = ADC_u16ReadChannelSyn(0);
+		LDR = (LDR / 1023.0) * 100;
+		LCD_voidSendNumber(LDR);
+		_delay_ms(100);
+        if (LDR <= 40) {
+            // Turn off all LEDs
+            for (u8 i = 0; i < 8; i++) {
+                DIO_SetPinValue(DIO_PORTC, i, DIO_PIN_LOW);
+            }
+        } else {
+            // Turn on all LEDs
+            for (u8 i = 0; i < 8; i++) {
+                DIO_SetPinValue(DIO_PORTC, i, DIO_PIN_HIGH);
+            }
+        }
+
+        _delay_ms(100); // Delay for a moment before reading LDR again
+    }
+
 	
 	
 	return 0;
+*/
 
 }
