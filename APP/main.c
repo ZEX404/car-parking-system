@@ -15,6 +15,8 @@
 
 #include "TimeCalc.h"
 
+u8 Emergency = 0;
+
 void TIMER1_OVFmode_ISR(void);
 timestamp CurrentTime;
 
@@ -69,6 +71,55 @@ int main(void) {
 	 */
 
 
+
+	/* Emergency State */
+/*	
+	DIO_SetPinDirection(DIO_PORTB, DIO_PIN2, DIO_OUTPUT); // Led
+	DIO_SetPinDirection(DIO_PORTB, DIO_PIN0, DIO_OUTPUT); // Buzzer
+	DIO_SetPinDirection(EXTI0_PORT, EXTI0_PIN, DIO_INPUT); // Push Button
+	
+	if(DIO_GetPinValue(EXTI0_PORT, EXTI0_PIN) == DIO_LOW)
+	{
+		EXTI_void_INT0();
+		GIE_Enabled();
+	}
+	while (1)
+	{
+		if (Emergency == 0)
+		{
+			continue;
+		}
+		else
+		{
+			// Led
+			DIO_SetPinValue(DIO_PORTB, DIO_PIN2, DIO_HIGH);
+			_delay_ms(100);
+			DIO_SetPinValue(DIO_PORTB, DIO_PIN2, DIO_LOW);
+			_delay_ms(100);
+
+			// Buzzer
+			// Ascending pitch
+			for (int frequency = 100; frequency <= 1000; frequency += 100)
+			{
+				DIO_SetPinValue(DIO_PORTB, DIO_PIN0, DIO_HIGH);
+				_delay_ms(1000 / frequency);
+				DIO_SetPinValue(DIO_PORTB, DIO_PIN0, DIO_LOW);
+				_delay_ms(1000 / frequency);
+			}
+			// Descending pitch
+			for (int frequency = 1000; frequency >= 100; frequency -= 100)
+			{
+				DIO_SetPinValue(DIO_PORTB, DIO_PIN0, DIO_HIGH);
+				_delay_ms(1000 / frequency);
+				DIO_SetPinValue(DIO_PORTB, DIO_PIN0, DIO_LOW);
+				_delay_ms(1000 / frequency);
+			}
+
+			// Servo
+			//Servo_OpenGate();
+		}
+	}
+*/
 	return 0;
 
 }
@@ -81,5 +132,11 @@ void TIMER1_OVFmode_ISR(void){
 		AddOneSecond(&CurrentTime);
 		count = 0; //reset counter
 	}
+}
+
+void __vector_1 (void) __attribute__((signal));
+void __vector_1 (void)
+{
+	Emergency = !Emergency;
 }
 
