@@ -7,12 +7,16 @@
 #include "../LIB/BIT_MATH.h"
 #include "../MCAL/DIO/DIO.h"
 #include "../MCAL/UART/UART.h"
+#include "../MCAL/Timer/timer.h"
 
 #include "../HAL/CLCD/CLCD.h"
 #include "../HAL/Keypad/Keypad.h"
 #include "../HAL/Servo/Servo.h"
-#include "../MCAL/ADC/ADC.h"
 
+#include "TimeCalc.h"
+
+void TIMER1_OVFmode_ISR(void);
+timestamp CurrentTime;
 
 int main(void) {
 
@@ -44,37 +48,38 @@ int main(void) {
 	Servo_CloseGate(); 										   // Rotate back to 0 degrees to Close Gate 
 
 */
-/*
-LDR PART:
-	CLCD_voidInit();
-	ADC_vidInit();
-	LCD_voidClear();
-	 f32 LDR;
-	while(1)
-	{
-		LCD_voidClear();
-		LDR = ADC_u16ReadChannelSyn(0);
-		LDR = (LDR / 1023.0) * 100;
-		LCD_voidSendNumber(LDR);
-		_delay_ms(100);
-        if (LDR <= 40) {
-            // Turn off all LEDs
-            for (u8 i = 0; i < 8; i++) {
-                DIO_SetPinValue(DIO_PORTC, i, DIO_PIN_LOW);
-            }
-        } else {
-            // Turn on all LEDs
-            for (u8 i = 0; i < 8; i++) {
-                DIO_SetPinValue(DIO_PORTC, i, DIO_PIN_HIGH);
-            }
-        }
+	/*******TIMER*******/
+	u8 SpotsNum = 10;  //TODO: determine total number of spots
+	//assume initial time is 7am
+	CurrentTime.hours = 7;
+	CurrentTime.minutes = 0;
+	CurrentTime.seconds = 0;
 
-        _delay_ms(100); // Delay for a moment before reading LDR again
-    }
+	spotInfo SpotsArr[SpotsNum];
+	TIMER1_void_Init();
+	TIMER1_u8_SetCallback(&TIMER1_OVFmode_ISR);
 
-	
-	
+	/*TODO:
+	 * save entering time once the car reserves a spot successfully
+	 * 		SpotEnteringTime(SpotsArr["spot index"], &CurrentTime);
+	 * save leaving time
+	 * 		SpotLeavingTime(SpotsArr["spot index"], &CurrentTime);
+	 * display parking duration when leaving
+	 * 		CalcParkingDuration(&(SpotsArr["spot index"]));
+	 */
+
+
 	return 0;
-*/
 
 }
+
+
+void TIMER1_OVFmode_ISR(void){
+	static u16 count = 0;
+	count++;
+	if(count == 31250){
+		AddOneSecond(&CurrentTime);
+		count = 0; //reset counter
+	}
+}
+

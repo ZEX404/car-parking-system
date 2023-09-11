@@ -4,8 +4,8 @@
  *  Created on: Aug 24, 2023
  *      Author: Menna
  */
-#include"STD_TYPES.h"
-#include"BIT_MATH.h"
+#include "../../LIB/STD_TYPES.h"
+#include "../../LIB/BIT_MATH.h"
 #include<avr/io.h>
 #include"ADC.h"
 
