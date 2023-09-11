@@ -8,42 +8,34 @@
 #include "../../LIB/STD_TYPES.h"
 #include "../../LIB/BIT_MATH.h"
 #include "../../MCAL/DIO/DIO.h"
-#include "../../HAL/Servo/Servo.h"
+#include "Servo.h"
 #include <util/delay.h>
 #include <avr/io.h>
 
-void TIMER1_voidCTCINIT(){
+void TIMER0_voidCTCINIT(){
 
 	// Mode FAST PWM
-	CLR_BIT(TCCR1A, TCCR1A_COM1A0);
-	SET_BIT(TCCR1A, TCCR1A_COM1A1);
+	CLR_BIT(TCCR0, TCCR0_COM01);
+	SET_BIT(TCCR0, TCCR0_COM00);
 
 	// Setting waveform generation for FAST PWM
-	CLR_BIT(TCCR1A,TCCR1A_WGM10);
-	SET_BIT(TCCR1A,TCCR1A_WGM11);
-	SET_BIT(TCCR1B,TCCR1A_WGM12);
-	SET_BIT(TCCR1B,TCCR1A_WGM13);
+	SET_BIT(TCCR0,TCCR0_WGM00);
+	SET_BIT(TCCR0,TCCR0_WGM01);
 
 	// Setting the Prescaler
-	TCCR1B &= PRESCALLER_MASK;
-	TCCR1B |= DIVIDE_BY_8;
+	TCCR0 &= PRESCALLER_MASK;
+	TCCR0 |= DIVIDE_BY_8;
 }
 
-void TIMER1_voidSetChannelACompareMatch(u16 Copy_u16CompareMatch){
+void TIMER0_voidSetChannelACompareMatch(u16 Copy_u16CompareMatch){
 
-	OCR1A = Copy_u16CompareMatch;
-}
-
-
-void TIMER1_voidSetTopTicks(u16 Copy_u16TopTicks){
-
-	ICR1 = Copy_u16TopTicks;
+	OCR0 = Copy_u16CompareMatch;
 }
 
 void Servo_OpenGate(void){
 	u16 ServoLocal_u16Iterator;
 	for(ServoLocal_u16Iterator = 1000 ; ServoLocal_u16Iterator < 1090 ; ServoLocal_u16Iterator++){
-		TIMER1_voidSetChannelACompareMatch(ServoLocal_u16Iterator);
+		TIMER0_voidSetChannelACompareMatch(ServoLocal_u16Iterator);
 		_delay_ms(10);
 	}
 }
@@ -51,7 +43,7 @@ void Servo_OpenGate(void){
 void Servo_CloseGate(void){
     u16 ServoLocal_u16Iterator;
     for(ServoLocal_u16Iterator = 1090 ; ServoLocal_u16Iterator >= 999; ServoLocal_u16Iterator--){
-        TIMER1_voidSetChannelACompareMatch(ServoLocal_u16Iterator);
+        TIMER0_voidSetChannelACompareMatch(ServoLocal_u16Iterator);
         _delay_ms(10);
     }
 }
