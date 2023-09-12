@@ -68,6 +68,6 @@ void CalcParkingDuration(spotInfo * SpotPtr){
 		Parking_local->seconds = Leaving_local->seconds - Entering_local->seconds + 60;
 	}
 	else {
-		SpotPtr->ParkingDuration.seconds = Leaving_local->seconds - Entering_local->seconds;
+		Parking_local->seconds = Leaving_local->seconds - Entering_local->seconds;
 	}
 }

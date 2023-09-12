@@ -17,7 +17,7 @@
 
 u8 Emergency = 0;
 
-void TIMER1_OVFmode_ISR(void);
+void TIMER1_CTCmode_ISR(void);
 timestamp CurrentTime;
 
 int main(void) {
@@ -59,7 +59,7 @@ int main(void) {
 
 	spotInfo SpotsArr[SpotsNum];
 	TIMER1_void_Init();
-	TIMER1_u8_SetCallback(&TIMER1_OVFmode_ISR);
+	TIMER1_u8_SetCallback(&TIMER1_CTCmode_ISR);
 
 	/*TODO:
 	 * save entering time once the car reserves a spot successfully
@@ -152,10 +152,10 @@ int main(void) {
 }
 
 
-void TIMER1_OVFmode_ISR(void){
-	static u16 count = 0;
+void TIMER1_CTCmode_ISR(void){
+	static u8 count = 0;
 	count++;
-	if(count == 31250){
+	if(count == 125){
 		AddOneSecond(&CurrentTime);
 		count = 0; //reset counter
 	}

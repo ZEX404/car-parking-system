@@ -16,11 +16,13 @@
 void (* TIMRE1_PtrCallback)(void) = NULL;
 
 void TIMER1_void_Init(){
-	//set waveform generation to Normal
+	//set waveform generation to CTC mode (TOP: OCR1A)
 	CLR_BIT(TCCR1A, TCCR1A_WGM10);
 	CLR_BIT(TCCR1A, TCCR1A_WGM11);
-	CLR_BIT(TCCR1B, TCCR1B_WGM12);
+	SET_BIT(TCCR1B, TCCR1B_WGM12);
 	CLR_BIT(TCCR1B, TCCR1B_WGM13);
+	//compare match value
+	OCR1A = 250;
 	//enable OVF interrupt and general interrupt (GIE)
 	SET_BIT(TIMSK, TIMSK_TOIE1);
 	GIE_void_Enabled();
