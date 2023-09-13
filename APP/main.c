@@ -101,8 +101,8 @@ int main(void) {
 
 	/* Emergency State */
 /*	
-	DIO_SetPinDirection(DIO_PORTB, DIO_PIN2, DIO_OUTPUT); // Led
-	DIO_SetPinDirection(DIO_PORTB, DIO_PIN0, DIO_OUTPUT); // Buzzer
+	DIO_SetPinDirection(DIO_PORTC, DIO_PIN6, DIO_OUTPUT); // Led
+	DIO_SetPinDirection(DIO_PORTC, DIO_PIN7, DIO_OUTPUT); // Buzzer
 	DIO_SetPinDirection(EXTI0_PORT, EXTI0_PIN, DIO_INPUT); // Push Button
 	
 	if(DIO_GetPinValue(EXTI0_PORT, EXTI0_PIN) == DIO_LOW)
