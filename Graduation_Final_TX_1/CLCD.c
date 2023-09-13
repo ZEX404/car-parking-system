@@ -206,6 +206,11 @@ void available_places(void){
 }
 
 void Checkout(void){
+	u8 PricePerHour = 10;
+	u8 InitialPrice = 10;
+	u8 ParkingHours;
+	u8 TotalPrice;
+
 	while(flag != 1){
 		CLCD_voidLCDClear();
 		CLCD_voidSendString("Enter Slot Number");
@@ -214,7 +219,7 @@ void Checkout(void){
 			Local_u8Key = KPD_GetPressedKey();
 		} while (Local_u8Key == 0xFF);
 
-		switch(Local_u8Key){
+	switch(Local_u8Key){
 		case '1':
 		case '2':
 		case '3':
@@ -223,11 +228,10 @@ void Checkout(void){
 
 			spot_index = atoi(Local_u8Key);							// Timer
 			SpotLeavingTime(&SpotsArr[spot_index], &CurrentTime);	// Timer
-
 			CalcParkingDuration(&SpotsArr[spot_index]);				// Timer
-			/*
-			  	  Timer calculations (money)
-			 */
+
+			ParkingHours = SpotsArr[spot_index].ParkingDuration.hours;
+			TotalPrice = InitialPrice + PricePerHour * ParkingHours + '0';
 
 			break;
 		}
@@ -247,7 +251,15 @@ void Checkout(void){
 	}
 
 	// convert money value from int to string by sprintf
-	// CLCD_voidsendstring("Your Checkout is");
-	// CLCD_voidsendstring("Amount (money) ");
-
+	CLCD_voidLCDClear();
+	CLCD_voidSendString("Checkout: ");
+	CLCD_voidSendData(TotalPrice);
+	CLCD_voidGoToXY(1,0);
+	CLCD_voidSendString(" H: ");
+	CLCD_voidSendData(SpotsArr[atoi(Local_u8Key)].ParkingDuration.hours + '0');
+	CLCD_voidSendString(" M: ");
+	CLCD_voidSendData(SpotsArr[atoi(Local_u8Key)].ParkingDuration.minutes + '0');
+	CLCD_voidSendString(" S: ");
+	CLCD_voidSendData(SpotsArr[atoi(Local_u8Key)].ParkingDuration.seconds + '0');
+	_delay_ms(500);
 }

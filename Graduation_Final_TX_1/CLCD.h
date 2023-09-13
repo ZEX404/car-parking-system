@@ -23,4 +23,11 @@ void CLCD_voidGoToXY(u8 Copy_u8XPos,u8 Copy_u8YPos);
 /* LCD Clear */
 void CLCD_voidLCDClear(void);
 
+/*Spot reservation*/
+void reserve(void);
+void reserved_places(void);
+void available_places(void);
+void Checkout(void);
+
+
 #endif /* CLCD_H_ */

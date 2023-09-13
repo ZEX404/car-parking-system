@@ -12,7 +12,6 @@
 #include "GIE.h"
 #include <avr/io.h>
 
-#define NULL ((void*)0)
 void (* TIMRE1_PtrCallback)(void) = NULL;
 
 void TIMER1_void_Init(){
@@ -23,16 +22,16 @@ void TIMER1_void_Init(){
 	CLR_BIT(TCCR1B, TCCR1B_WGM13);
 	//compare match value
 	OCR1A = 250;
-	//enable OVF interrupt and general interrupt (GIE)
-	SET_BIT(TIMSK, TIMSK_TOIE1);
+	//enable Output Compare Match interrupt and general interrupt (GIE)
+	SET_BIT(TIMSK, TIMSK_OCIE1A);
 	GIE_void_Enabled();
 	//prescaler = 256
 	CLR_BIT(TCCR1B, TCCR1B_CS10);
 	CLR_BIT(TCCR1B, TCCR1B_CS11);
 	SET_BIT(TCCR1B, TCCR1B_CS12);
 }
-void __vector_9(void) __attribute__((signal));
-void __vector_9(void){
+void __vector_7(void) __attribute__((signal));
+void __vector_7(void){
 	if(TIMRE1_PtrCallback != 0){
 		TIMRE1_PtrCallback();
 	}

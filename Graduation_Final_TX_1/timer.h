@@ -32,10 +32,8 @@
 #define OK 		1
 #define NotOK 	0
 
-#define TIMER_OVFmode	0
-#define TIMER_CTCmode	1
-
-
-
+/**************PROTOTYPES**************/
+void TIMER1_void_Init();
+u8 TIMER1_u8_SetCallback(void (* PtrCallback));
 
 #endif /* TIMER_H_ */

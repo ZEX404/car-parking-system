@@ -31,7 +31,7 @@ int main(void){
 	DIO_SetPinDirection(DIO_PORTC, DIO_PIN7, DIO_PIN_OUTPUT); // Buzzer
 	DIO_SetPinDirection(EXTI0_PORT, EXTI0_PIN, DIO_PIN_INPUT); // Push Button
 
-	CurrentTime.hours = 7;
+	CurrentTime.hours = 0;
 	CurrentTime.minutes = 0;
 	CurrentTime.seconds = 0;
 
