@@ -3,9 +3,17 @@
 #include "DIO.h"
 #include "CLCD.h"
 #include "Keypad.h"
+#include "TimeCalc.h"
+#include "timer.h"
 #include <util/delay.h>
 #include <avr/io.h>
-u8 Local_u8Key=0;
+
+u8 Local_u8Key=0, SpotsNum = 5;
+
+timestamp CurrentTime;
+
+spotInfo SpotsArr[5];
+
 
 int main(void){
 	DIO_SetPortDirection(DIO_PORTA, DIO_PORT_OUTPUT);
@@ -14,9 +22,15 @@ int main(void){
 	DIO_SetPinDirection(DIO_PORTC, DIO_PIN1, DIO_PIN_OUTPUT);
 	DIO_SetPinDirection(DIO_PORTC, DIO_PIN2, DIO_PIN_OUTPUT);
 
+	CurrentTime.hours = 7;
+	CurrentTime.minutes = 0;
+	CurrentTime.seconds = 0;
+
 	UART_voidINIT_TX();
 	KPD_INIT();
 	CLCD_voidInit();
+	TIMER1_void_Init();
+	TIMER1_u8_SetCallback(&TIMER1_CTCmode_ISR);
 
 	UART_voidSendData_TX(1);
 	UART_voidSendData_TX(0);
@@ -72,3 +86,11 @@ int main(void){
 	return 0;
 }
 
+void TIMER1_CTCmode_ISR(void){
+	static u8 count = 0;
+	count++;
+	if(count == 125){
+		AddOneSecond(&CurrentTime);
+		count = 0; //reset counter
+	}
+}

@@ -2,9 +2,14 @@
 #include "STD_TYPES.h"
 #include "CLCD.h"
 #include "DIO.h"
+#include "TimeCalc.h"
+#include "Timer.h"
 #include "UART_TX.h"
 
-u8 Local_u8Key, array_places[4], flag = 0;
+u8 Local_u8Key, array_places[4], flag = 0, SpotsNum, spot_index;
+spotInfo SpotsArr[4];
+timestamp CurrentTime;
+
 /* Prototype Functions */
 void CLCD_voidSendCommand (u8 Copy_u8Command)
 {
@@ -106,6 +111,7 @@ void reserve(void){
 			CLCD_voidGoToXY(1,0);
 			CLCD_voidSendString("   is reserved  ");
 			reserved = 1;
+			SpotEnteringTime(&SpotsArr[1], &CurrentTime); // Timer
 			array_places[0] = 1;
 			_delay_ms(1000);
 			CLCD_voidLCDClear();
@@ -120,6 +126,7 @@ void reserve(void){
 			CLCD_voidGoToXY(1,0);
 			CLCD_voidSendString("   is reserved  ");
 			reserved = 1;
+			SpotEnteringTime(&SpotsArr[2], &CurrentTime); // Timer
 			array_places[1] = 2;
 			_delay_ms(1000);
 			CLCD_voidLCDClear();
@@ -134,6 +141,7 @@ void reserve(void){
 			CLCD_voidGoToXY(1,0);
 			CLCD_voidSendString("   is reserved  ");
 			reserved = 1;
+			SpotEnteringTime(&SpotsArr[3], &CurrentTime); // Timer
 			array_places[2] = 3;
 			_delay_ms(1000);
 
@@ -148,6 +156,7 @@ void reserve(void){
 			CLCD_voidGoToXY(1,0);
 			CLCD_voidSendString("   is reserved  ");
 			reserved = 1;
+			SpotEnteringTime(&SpotsArr[4], &CurrentTime); // Timer
 			array_places[3] = 4;
 			_delay_ms(1000);
 			CLCD_voidLCDClear();
@@ -211,6 +220,15 @@ void Checkout(void){
 		case '3':
 		case '4':{
 			flag = 1;
+
+			spot_index = atoi(Local_u8Key);							// Timer
+			SpotLeavingTime(&SpotsArr[spot_index], &CurrentTime);	// Timer
+
+			CalcParkingDuration(&SpotsArr[spot_index]);				// Timer
+			/*
+			  	  Timer calculations (money)
+			 */
+
 			break;
 		}
 		default:{
@@ -220,21 +238,16 @@ void Checkout(void){
 
 		}
 		}
+
 	}
-
-	/*
-	  	  Timer calculations (money)
-	 */
-
 	for (int i = 0; i < 4; i++) {
 		if (array_places[i] == atoi(Local_u8Key)) {
 			array_places[i] = 0;
 		}
 	}
 
-
-
-
-
+	// convert money value from int to string by sprintf
+	// CLCD_voidsendstring("Your Checkout is");
+	// CLCD_voidsendstring("Amount (money) ");
 
 }
