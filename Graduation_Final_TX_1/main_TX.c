@@ -51,6 +51,7 @@ int main(void){
 			EXTI_void_INT0();
 			GIE_void_Enabled();
 		}
+		EmergencyState();
 
 		CLCD_voidLCDClear();
 		CLCD_voidSendString("Welcome to our");
@@ -105,7 +106,7 @@ int main(void){
 void EmergencyState(){
 	if (Emergency == 0)
 	{
-        return;  // Exit the function if Emergency is 0
+        	return;  // Exit the function if Emergency is 0
 	}
 	else
 	{
@@ -151,7 +152,6 @@ void TIMER1_CTCmode_ISR(void){
 void __vector_1 (void) __attribute__((signal));
 void __vector_1 (void)
 {
-	EmergencyState();
 	Emergency = !Emergency;
 }
 
