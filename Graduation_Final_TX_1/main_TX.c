@@ -106,7 +106,7 @@ int main(void){
 void EmergencyState(){
 	if (Emergency == 0)
 	{
-        	return;  // Exit the function if Emergency is 0
+        	GIE_void_Disabled();  // Exit the function if Emergency is 0
 	}
 	else
 	{
