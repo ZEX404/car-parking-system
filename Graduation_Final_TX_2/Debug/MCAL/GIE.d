@@ -1,0 +1,6 @@
+MCAL/GIE.o MCAL/GIE.o: ../MCAL/GIE.c ../MCAL/../LIB/BIT_MATH.h \
+  ../MCAL/GIE.h
+
+../MCAL/../LIB/BIT_MATH.h:
+
+../MCAL/GIE.h:

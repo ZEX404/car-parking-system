@@ -1,0 +1,607 @@
+Archive member included because of file (symbol)
+
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                              ./APP/main_TX.o (__divmodhi4)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./HAL/CLCD.o (__do_copy_data)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/timer.o (__do_clear_bss)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                              ./HAL/CLCD.o (sprintf)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (vfprintf)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (__prologue_saves__)
+d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                              d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+spot_index          0x1               ./HAL/CLCD.o
+array_places        0x4               ./HAL/CLCD.o
+CurrentTime         0x3               ./HAL/CLCD.o
+SpotsArr            0x32              ./HAL/CLCD.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/DIO.o
+LOAD ./MCAL/EXTI.o
+LOAD ./MCAL/GIE.o
+LOAD ./MCAL/UART_TX.o
+LOAD ./MCAL/timer.o
+LOAD ./HAL/CLCD.o
+LOAD ./HAL/Keypad.o
+LOAD ./APP/TimeCalc.o
+LOAD ./APP/main_TX.o
+LOAD d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x206c
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./MCAL/DIO.o
+ .text          0x00000092        0x0 ./MCAL/EXTI.o
+ .text          0x00000092        0x0 ./MCAL/GIE.o
+ .text          0x00000092        0x0 ./MCAL/UART_TX.o
+ .text          0x00000092        0x0 ./MCAL/timer.o
+ .text          0x00000092        0x0 ./HAL/CLCD.o
+ .text          0x00000092        0x0 ./HAL/Keypad.o
+ .text          0x00000092        0x0 ./APP/TimeCalc.o
+ .text          0x00000092        0x0 ./APP/main_TX.o
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .text          0x00000092        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_SetPinDirection
+                0x00000092      0x210 ./MCAL/DIO.o
+                0x00000092                DIO_SetPinDirection
+ .text.DIO_SetPortDirection
+                0x000002a2       0xfa ./MCAL/DIO.o
+                0x000002a2                DIO_SetPortDirection
+ .text.DIO_SetPinValue
+                0x0000039c      0x210 ./MCAL/DIO.o
+                0x0000039c                DIO_SetPinValue
+ .text.DIO_SetPortValue
+                0x000005ac       0x88 ./MCAL/DIO.o
+                0x000005ac                DIO_SetPortValue
+ .text.DIO_GetPinValue
+                0x00000634      0x104 ./MCAL/DIO.o
+                0x00000634                DIO_GetPinValue
+ .text.EXTI_void_INT0
+                0x00000738       0x38 ./MCAL/EXTI.o
+                0x00000738                EXTI_void_INT0
+ .text.GIE_void_Enabled
+                0x00000770       0x1c ./MCAL/GIE.o
+                0x00000770                GIE_void_Enabled
+ .text.GIE_void_Disabled
+                0x0000078c       0x1c ./MCAL/GIE.o
+                0x0000078c                GIE_void_Disabled
+ .text.UART_voidINIT_TX
+                0x000007a8       0x9a ./MCAL/UART_TX.o
+                0x000007a8                UART_voidINIT_TX
+ .text.UART_voidSendData_TX
+                0x00000842       0x34 ./MCAL/UART_TX.o
+                0x00000842                UART_voidSendData_TX
+ .text.UART_u8RecieveData_TX
+                0x00000876       0x1e ./MCAL/UART_TX.o
+                0x00000876                UART_u8RecieveData_TX
+ .text.TIMER0_void_Init
+                0x00000894       0xa6 ./MCAL/timer.o
+                0x00000894                TIMER0_void_Init
+ .text.delay    0x0000093a       0x40 ./MCAL/timer.o
+                0x0000093a                delay
+ .text.TIMER1_void_Init
+                0x0000097a       0x8e ./MCAL/timer.o
+                0x0000097a                TIMER1_void_Init
+ .text.__vector_7
+                0x00000a08       0x66 ./MCAL/timer.o
+                0x00000a08                __vector_7
+ .text.TIMER1_u8_SetCallback
+                0x00000a6e       0x3a ./MCAL/timer.o
+                0x00000a6e                TIMER1_u8_SetCallback
+ .text.CLCD_voidSendCommand
+                0x00000aa8       0x4c ./HAL/CLCD.o
+                0x00000aa8                CLCD_voidSendCommand
+ .text.CLCD_voidSendData
+                0x00000af4       0x4c ./HAL/CLCD.o
+                0x00000af4                CLCD_voidSendData
+ .text.CLCD_voidInit
+                0x00000b40       0x28 ./HAL/CLCD.o
+                0x00000b40                CLCD_voidInit
+ .text.CLCD_voidSendString
+                0x00000b68       0x5a ./HAL/CLCD.o
+                0x00000b68                CLCD_voidSendString
+ .text.CLCD_voidGoToXY
+                0x00000bc2       0x58 ./HAL/CLCD.o
+                0x00000bc2                CLCD_voidGoToXY
+ .text.CLCD_voidLCDClear
+                0x00000c1a       0x14 ./HAL/CLCD.o
+                0x00000c1a                CLCD_voidLCDClear
+ .text.reserve  0x00000c2e      0x166 ./HAL/CLCD.o
+                0x00000c2e                reserve
+ .text.reserved_places
+                0x00000d94       0xba ./HAL/CLCD.o
+                0x00000d94                reserved_places
+ .text.available_places
+                0x00000e4e       0xb4 ./HAL/CLCD.o
+                0x00000e4e                available_places
+ .text.Checkout
+                0x00000f02      0x338 ./HAL/CLCD.o
+                0x00000f02                Checkout
+ .text.KPD_INIT
+                0x0000123a       0xae ./HAL/Keypad.o
+                0x0000123a                KPD_INIT
+ .text.KPD_GetPressedKey
+                0x000012e8      0x208 ./HAL/Keypad.o
+                0x000012e8                KPD_GetPressedKey
+ .text.AddOneSecond
+                0x000014f0       0x78 ./APP/TimeCalc.o
+                0x000014f0                AddOneSecond
+ .text.SpotEnteringTime
+                0x00001568       0x46 ./APP/TimeCalc.o
+                0x00001568                SpotEnteringTime
+ .text.SpotLeavingTime
+                0x000015ae       0x46 ./APP/TimeCalc.o
+                0x000015ae                SpotLeavingTime
+ .text.CalcParkingDuration
+                0x000015f4      0x160 ./APP/TimeCalc.o
+                0x000015f4                CalcParkingDuration
+ .text.main     0x00001754      0x1aa ./APP/main_TX.o
+                0x00001754                main
+ .text.EmergencyState
+                0x000018fe      0x104 ./APP/main_TX.o
+                0x000018fe                EmergencyState
+ .text.TIMER1_CTCmode_ISR
+                0x00001a02       0x2c ./APP/main_TX.o
+                0x00001a02                TIMER1_CTCmode_ISR
+ .text.__vector_1
+                0x00001a2e       0x3c ./APP/main_TX.o
+                0x00001a2e                __vector_1
+ .text.libgcc   0x00001a6a       0x26 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x00001a6a                __divmodhi4
+                0x00001a6a                _div
+ .text.libgcc   0x00001a90        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001a90        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001a90        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001a90       0x28 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001a90                __udivmodhi4
+ .text.avr-libc
+                0x00001ab8       0x48 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00001ab8                sprintf
+ .text.avr-libc
+                0x00001b00      0x3ba d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00001b00                vfprintf
+ .text.avr-libc
+                0x00001eba       0x16 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00001eba                strnlen_P
+ .text.avr-libc
+                0x00001ed0       0x16 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00001ed0                strnlen
+ .text.avr-libc
+                0x00001ee6       0x58 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00001ee6                fputc
+ .text.avr-libc
+                0x00001f3e       0xbc d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00001f3e                __ultoa_invert
+ .text.libgcc   0x00001ffa       0x38 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00001ffa                __prologue_saves__
+ .text.libgcc   0x00002032       0x36 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00002032                __epilogue_restores__
+                0x00002068                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002068        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002068                exit
+                0x00002068                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002068        0x4 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000206c                _etext = .
+
+.data           0x00800060      0x158 load address 0x0000206c
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/DIO.o
+ .data          0x00800060        0x0 ./MCAL/EXTI.o
+ .data          0x00800060        0x0 ./MCAL/GIE.o
+ .data          0x00800060        0x0 ./MCAL/UART_TX.o
+ .data          0x00800060        0x0 ./MCAL/timer.o
+ .data          0x00800060       0xe0 ./HAL/CLCD.o
+ .data          0x00800140        0x0 ./HAL/Keypad.o
+ .data          0x00800140        0x0 ./APP/TimeCalc.o
+ .data          0x00800140       0x67 ./APP/main_TX.o
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x008001a7        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ *(.data*)
+ .data.SpotsNum
+                0x008001a7        0x1 ./HAL/CLCD.o
+                0x008001a7                SpotsNum
+ *(.rodata)
+ *(.rodata*)
+ .rodata.C.0.1292
+                0x008001a8       0x10 ./HAL/Keypad.o
+ *(.gnu.linkonce.d*)
+                0x008001b8                . = ALIGN (0x2)
+                0x008001b8                _edata = .
+                0x008001b8                PROVIDE (__data_end, .)
+
+.bss            0x008001b8       0x40
+                0x008001b8                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008001b8        0x0 ./MCAL/DIO.o
+ .bss           0x008001b8        0x0 ./MCAL/EXTI.o
+ .bss           0x008001b8        0x0 ./MCAL/GIE.o
+ .bss           0x008001b8        0x0 ./MCAL/UART_TX.o
+ .bss           0x008001b8        0x0 ./MCAL/timer.o
+ .bss           0x008001b8        0x0 ./HAL/CLCD.o
+ .bss           0x008001b8        0x0 ./HAL/Keypad.o
+ .bss           0x008001b8        0x0 ./APP/TimeCalc.o
+ .bss           0x008001b8        0x0 ./APP/main_TX.o
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x008001b8        0x0 d:/iti embedded/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ *(.bss*)
+ .bss.TIMRE1_PtrCallback
+                0x008001b8        0x2 ./MCAL/timer.o
+                0x008001b8                TIMRE1_PtrCallback
+ .bss.flag      0x008001ba        0x1 ./HAL/CLCD.o
+                0x008001ba                flag
+ .bss.Local_u8Key
+                0x008001bb        0x1 ./APP/main_TX.o
+                0x008001bb                Local_u8Key
+ .bss.Emergency
+                0x008001bc        0x1 ./APP/main_TX.o
+                0x008001bc                Emergency
+ .bss.count.1352
+                0x008001bd        0x1 ./APP/main_TX.o
+ *(COMMON)
+ COMMON         0x008001be       0x3a ./HAL/CLCD.o
+                0x008001be                spot_index
+                0x008001bf                array_places
+                0x008001c3                CurrentTime
+                0x008001c6                SpotsArr
+                0x008001f8                PROVIDE (__bss_end, .)
+                0x0000206c                __data_load_start = LOADADDR (.data)
+                0x000021c4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001f8        0x0
+                0x008001f8                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008001f8                PROVIDE (__noinit_end, .)
+                0x008001f8                _end = .
+                0x008001f8                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2a84
+ *(.stab)
+ .stab          0x00000000      0x738 ./MCAL/DIO.o
+ .stab          0x00000738      0x168 ./MCAL/EXTI.o
+                                0x390 (size before relaxing)
+ .stab          0x000008a0      0x174 ./MCAL/GIE.o
+                                0x330 (size before relaxing)
+ .stab          0x00000a14      0x24c ./MCAL/UART_TX.o
+                                0x474 (size before relaxing)
+ .stab          0x00000c60      0x3b4 ./MCAL/timer.o
+                                0x5dc (size before relaxing)
+ .stab          0x00001014      0xb10 ./HAL/CLCD.o
+                                0xb1c (size before relaxing)
+ .stab          0x00001b24      0x3c0 ./HAL/Keypad.o
+                                0x5e8 (size before relaxing)
+ .stab          0x00001ee4      0x408 ./APP/TimeCalc.o
+                                0x414 (size before relaxing)
+ .stab          0x000022ec      0x798 ./APP/main_TX.o
+                                0x810 (size before relaxing)
+
+.stabstr        0x00000000     0x18a5
+ *(.stabstr)
+ .stabstr       0x00000000     0x18a5 ./MCAL/DIO.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Graduation_Final_TX_2.elf elf32-avr)
+LOAD linker stubs

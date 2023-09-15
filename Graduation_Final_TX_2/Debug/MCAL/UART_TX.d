@@ -1,0 +1,11 @@
+MCAL/UART_TX.o MCAL/UART_TX.o: ../MCAL/UART_TX.c \
+  ../MCAL/../LIB/STD_TYPES.h ../MCAL/../LIB/BIT_MATH.h ../MCAL/DIO.h \
+  ../MCAL/UART_TX.h
+
+../MCAL/../LIB/STD_TYPES.h:
+
+../MCAL/../LIB/BIT_MATH.h:
+
+../MCAL/DIO.h:
+
+../MCAL/UART_TX.h:

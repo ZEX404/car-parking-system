@@ -1,0 +1,8 @@
+MCAL/EXTI.o MCAL/EXTI.o: ../MCAL/EXTI.c ../MCAL/../LIB/STD_TYPES.h \
+  ../MCAL/../LIB/BIT_MATH.h ../MCAL/EXTI.h
+
+../MCAL/../LIB/STD_TYPES.h:
+
+../MCAL/../LIB/BIT_MATH.h:
+
+../MCAL/EXTI.h:

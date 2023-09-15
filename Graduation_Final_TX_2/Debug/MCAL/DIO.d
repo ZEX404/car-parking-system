@@ -1,0 +1,8 @@
+MCAL/DIO.o MCAL/DIO.o: ../MCAL/DIO.c ../MCAL/../LIB/STD_TYPES.h \
+  ../MCAL/../LIB/BIT_MATH.h ../MCAL/DIO.h
+
+../MCAL/../LIB/STD_TYPES.h:
+
+../MCAL/../LIB/BIT_MATH.h:
+
+../MCAL/DIO.h:
